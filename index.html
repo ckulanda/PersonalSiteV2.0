@@ -3,18 +3,21 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="main.css">
-<script src="tollbar.js"></script>
-
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/overlay.css">
+<script src="js/tollbar.js"></script>
 </head>
-<body>
 
+
+<body>
+<main>
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="overlay-content">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Projects</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
   </div>
 </div>
 
@@ -34,21 +37,32 @@
   <div class = "textfade">
     <div class="largertext">
   <p>Who am I?</p>
-</div>
+    </div>
+
   <div class="smallertext"
-  <p><span class="txt-rotate"
+  <p>
+    <span class="txt-rotate"
   data-period="2000" data-rotate='["Designer", "Developer" ,"Programmer"
-  ,"Techie", "Engineer", "Coder"]'></span></p>
+  ,"Techie", "Engineer", "Coder"]'></span>
+</p>
  </div>
 </div>
-  </div>
+</div>
 
 
 
+<img src="images/waves2.png" alt="wave">
 
+
+<style>
+img{
+  background-size: cover;
+  bottom: 0px;
+  left:0px;
+  position:fixed;
+  display:block;
+}
+</style>
+</main>
 </body>
-
-
-</script>
-
 </html>
