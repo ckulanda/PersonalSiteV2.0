@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+* {-webkit-font-smoothing: antialiased;}
+body {
+  font-family: 'Montserrat', sans-serif;
+
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(221,190,169);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 70px;
+  color: #EDDCD2;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 100px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 1000px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.logo{
+  font-size: 40px;
+  font-weight: 300;
+  top:14px;
+  left:50px;
+  color:#A5A58D;
+}
+
+   .logo{
+     font-size: 30px;
+     font-weight: 300;
+     display: block;
+     position: absolute;
+     top:14px;
+     left:50px;
+     color:#A5A58D;
+   }
+   .topright div{
+     height: 4px;
+     background-color: black;
+     margin: 7px 0;
+     border-radius: 25px;
+   }
+   .topright{
+       width: 30px;
+       display: block;
+       position: absolute;
+       top:30px;
+       right:50px;
+   }
+   .one{
+     margin-top: 500px;
+     width: 35px;
+   }
+   .two{
+     width: 25px;
+   }
+   .three{
+     width: 30px;
+   }

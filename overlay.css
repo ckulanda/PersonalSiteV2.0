@@ -1,0 +1,71 @@
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgb(221,190,169);
+
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 70px;
+  color: #EDDCD2;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 100px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 1000px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+.logo{
+  font-size: 40px;
+  font-weight: 300;
+  top:14px;
+  left:50px;
+  color:#A5A58D;
+}
+hr {
+      display: block;
+      position: relative;
+      padding: 0;
+      margin: 8px auto;
+      height: 0;
+      width: 100%;
+      max-height: 0;
+      font-size: 1px;
+      line-height: 0;
+      clear: both;
+      border: none;
+      border-top: 1px solid #aaaaaa;
+      border-bottom: 1px solid #ffffff;
+   }

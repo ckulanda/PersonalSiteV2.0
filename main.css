@@ -1,35 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 * {-webkit-font-smoothing: antialiased;}
-body,html{
+body {
   font-family: 'Montserrat', sans-serif;
-  padding:0;
-    margin:0;
-}
 
-.topright div{
-  height: 4px;
-  background-color: black;
-  margin: 7px 0;
-  border-radius: 25px;
 }
-.topright{
-    width: 30px;
-    top:30px;
-    right:50px;
-}
-.one{
-
-  width: 35px;
-}
-.two{
-  width: 25px;
-}
-.three{
-  width: 30px;
-}
-
 .fadein{
-  margin:0;
+margin:0;
   text-align: center;
   margin-bottom: 0;
   line-height: 0px;
