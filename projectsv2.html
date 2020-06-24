@@ -11,7 +11,6 @@
 </head>
 <body>
 <main>
-
 <!-- Heeader and nav -->
 <div id="myNav" class="overlay">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -227,6 +226,9 @@ spacing. </p>
   <div align="center;" class="social">
     <img id="myImg15"src="images/projects/gs2.svg" alt="" width="175" height="175" />
   </div>
+  <div align="center;" class="social">
+    <img id="myImg16"src="images/projects/plantWebsite.png" alt="" width="175" height="175" />
+  </div>
 </div>
 
 <!-- The Modal -->
@@ -238,6 +240,11 @@ spacing. </p>
 <div id="myModal15" class="modal">
   <span class="close">&times;</span>
   <img class="modal-content" id="img15">
+  <div id="caption"></div>
+</div>
+<div id="myModal16" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img16">
   <div id="caption"></div>
 </div>
 
@@ -254,25 +261,26 @@ website, if I were to redo it myself. </p>
 <!---Projects 4-->
 <div class="container">
   <div align="center;" class="social">
-    <img id="myImg16" src="images/stylesheet.jpg" alt="" width="175" height="175" />
+    <img id="myImg17" src="images/stylesheet.jpg" alt="" width="175" height="175" />
   </div>
   <div align="center;" class="social">
-    <img id="myImg17"src="images/infographicv2.jpg" alt="" width="175" height="175" />
+    <img id="myImg18"src="images/projects/DiversityInfo.png" alt="" width="175" height="175" />
   </div><div align="center;" class="social">
-    <img id="myImg18" src="images/starsv2.jpg" alt="" width="175" height="175" />
+    <img id="myImg19" src="images/projects/showUpVs.jpg" alt="" width="175" height="175" />
   </div>
   <div align="center;" class="social">
-    <img id="myImg19" src="images/projects/posterr.jpg" alt="" width="175" height="175" />
+    <img id="myImg20" src="images/projects/faqPage.png" alt="" width="175" height="175" />
   </div>
-
+  <div align="center;" class="social">
+    <img id="myImg21" src="images/projects/diversityUpdate.png" alt="" width="175" height="175" />
+  </div>
+  <div align="center;" class="social">
+    <img id="myImg22" src="images/projects/posterr.jpg" alt="" width="175" height="175" />
+  </div>
 </div>
+
 
 <!-- The Modal -->
-<div id="myModal16" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="img16">
-  <div id="caption"></div>
-</div>
 <div id="myModal17" class="modal">
   <span class="close">&times;</span>
   <img class="modal-content" id="img17">
@@ -288,6 +296,22 @@ website, if I were to redo it myself. </p>
   <img class="modal-content" id="img19">
   <div id="caption"></div>
 </div>
+<div id="myModal20" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img20">
+  <div id="caption"></div>
+</div>
+<div id="myModal21" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img21">
+  <div id="caption"></div>
+</div>
+<div id="myModal22" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img22">
+  <div id="caption"></div>
+</div>
+
 
 <br>
 <div class="projectTitles">
@@ -351,6 +375,11 @@ var modal = document.getElementById("myModal16");
 var modal = document.getElementById("myModal17");
 var modal = document.getElementById("myModal18");
 var modal = document.getElementById("myModal19");
+
+
+var modal = document.getElementById("myModal20");
+var modal = document.getElementById("myModal21");
+var modal = document.getElementById("myModal22");
 
 //Project 1
 var img = document.getElementById("myImg");
@@ -510,7 +539,30 @@ img.onclick = function(){
   modalImg.src = this.src;
   captionText.innerHTML = this.alt;
 }
-
+var img = document.getElementById("myImg20");
+var modalImg = document.getElementById("img20");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg21");
+var modalImg = document.getElementById("img21");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+var img = document.getElementById("myImg22");
+var modalImg = document.getElementById("img22");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
 
 // Get the <span> element that closes the modal
 //once adding 10th element it wont load and then BREAKS entire set of x buttons
@@ -539,6 +591,11 @@ var span = document.getElementsByClassName("close")[15];
 var span = document.getElementsByClassName("close")[16];
 var span = document.getElementsByClassName("close")[17];
 var span = document.getElementsByClassName("close")[18];
+
+
+var span = document.getElementsByClassName("close")[19];
+var span = document.getElementsByClassName("close")[20];
+var span = document.getElementsByClassName("close")[21];
 
 // When the user clicks on <span> (x), close the modal this is where issues are
 span.onclick = function() {
@@ -587,6 +644,15 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+span.onclick = function() {
+  modal.style.display = "none";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
 span.onclick = function() {
   modal.style.display = "none";
 }
